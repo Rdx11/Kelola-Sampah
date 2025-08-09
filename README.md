@@ -152,7 +152,6 @@ Or configure your web server to serve the `public` directory.
 
 ## Support By
 
-* [PT Amman Mineral Nusa Tenggara](https://www.amman.co.id/id/) - scholarship provider
-* [Pintar](https://pintar.co/) - Media Learning
+* [Universitas Teknologi Sumbawa](https://uts.ac.id/en/welcome/) - Media Learning
 
 ---
