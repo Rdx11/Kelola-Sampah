@@ -152,6 +152,6 @@ Or configure your web server to serve the `public` directory.
 
 ## Support By
 
-* [Universitas Teknologi Sumbawa](https://uts.ac.id/en/welcome/) - Media Learning
+* [Universitas Teknologi Sumbawa](https://uts.ac.id/en/welcome/)
 
 ---
