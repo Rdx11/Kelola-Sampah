@@ -1,0 +1,93 @@
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.stepper::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #dee2e6;
+    z-index: 0;
+}
+
+.step {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    flex: 1;
+}
+
+.step .circle {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 3px solid #0d6efd;
+    display: inline-block;
+    color: #0d6efd;
+    margin: 0 auto 0.5rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.step .label {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background: transparent;
+}
+
+.vertical-stepper {
+    position: relative;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: 3px solid #0d6efd;
+}
+
+.vertical-stepper .step-item {
+    position: relative;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.5s ease-in-out both;
+}
+
+.vertical-stepper .step-item::before {
+    content: "";
+    position: absolute;
+    left: -1.6rem;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.vertical-stepper .step-item h5 {
+    margin-bottom: 0.3rem;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
